@@ -1,0 +1,14 @@
+" Press ? for help
+
+.. (up a dir)
+<rs/deepthir/projects/pet/star/
+▸ app/
+▾ lib/
+    label_form_builder.rb
+    model_validators.rb
+    star.rb
+▸ spec/
+  Gemfile
+  Gemfile.lock
+  star-1.0.gem
+  star.gemspec
