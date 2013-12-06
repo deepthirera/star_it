@@ -10,12 +10,11 @@ Gem::Specification.new do |s|
   s.authors = ["Deepthi"]
   s.email = "deepthirera@gmail.com"
   s.files = Dir['lib/**/*.rb']
-  s.test_files = ['spec/label_form_builder_spec.rb', 'spec/spec_helper.rb', 'spec/star_required_fields_spec.rb', 'spec/db/schema.rb', 'spec/db/database.yml']
+  s.test_files = Dir['spec/**/*.rb']
   s.require_paths = ["lib"]
   
   s.add_development_dependency "rspec"
+  s.add_development_dependency "sqlite3"
   s.add_runtime_dependency "rails", "4.0.0"
-  s.add_dependency('activemodel', '>= 4.0.0')
-  s.add_dependency('actionpack', '>= 4.0.0')
 end
 

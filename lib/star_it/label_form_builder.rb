@@ -1,5 +1,3 @@
-require 'action_view/helpers'
-
 module ActionView
   module Helpers
     class FormBuilder
