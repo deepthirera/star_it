@@ -4,6 +4,6 @@ class StarRequiredFields
       validator_instance.is_a?(ActiveRecord::Validations::PresenceValidator)
     end
 
-    presence_validator.first.attributes.include?(field_name.to_sym)
+    presence_validator.collect{|validator| validator.attributes}.flatten.include?(field_name.to_sym)
   end
 end
