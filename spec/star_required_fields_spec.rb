@@ -12,4 +12,8 @@ describe 'StarRequiredFields' do
     expect(StarRequiredFields.needed_for("Project", "description")).to be_true
     expect(StarRequiredFields.needed_for("Project", "summary")).to be_false
   end
+
+  it 'should return false if table does not exist' do
+    expect(StarRequiredFields.needed_for("OpenStruct", "name")).to be_false
+  end
 end
